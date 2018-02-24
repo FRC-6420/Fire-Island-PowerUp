@@ -2,6 +2,12 @@ package org.usfirst.frc6420.powerupcode;
 
 public class Constants {
 	
+	/*************************************************
+	 * constants for Autonomous  
+	 *************************************************/
+	public static final double autoForwardTime = 5.0; //sec
+	public static final double autoForwardSpeed = .25;
+	
    /*************************************************
     * constants for drive train and lift/motors  
     *************************************************/
@@ -16,12 +22,14 @@ public class Constants {
 	public static final double tuningFactor = 0.75;
 	
 	// arms/grabber motors 
-	public static final double grabberOutSpeed = 0.4;
-	public static final double grabberInSpeed = -0.4;
+	public static final double grabberOutSpeed = 0.7;
+	public static final double grabberInSpeed = -0.9;
+	public static final double timedGabberOutDuration = 2.0;
+	public static final double timedGabberInDuration = 2.0;
 	
 	// lift motors
-	public static final double liftUpSpeed = 0.35;
-	public static final double liftdownSpeed = -0.175;
+	public static final double liftUpSpeed = .7;
+	public static final double liftdownSpeed = -.3;
 
 }
 
