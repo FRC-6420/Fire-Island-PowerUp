@@ -7,6 +7,7 @@ public class Constants {
 	 *************************************************/
 	public static final double autoForwardTime = 5.0; //sec
 	public static final double autoForwardSpeed = .25;
+	public static final double autoForwardSpeed2 = -.25;
 	
    /*************************************************
     * constants for drive train and lift/motors  
@@ -14,10 +15,10 @@ public class Constants {
 	
 	// drive train motors 
 	
-	//ramp constant changes how fast it speeds up and down 
-	public static final double rampConstant = 0.01;
+	//ramp constant changes how fast it speeds up and down, smaller numbers make the ramp up slower. 
+	public static final double rampConstant = 0.005;
 	// zero band changes the size of the zero area on the controller 
-	public static final double zeroBand = 0.1;
+	public static final double zeroBand = 0.3;
 	// tuning factor changes how fast the robot can go 
 	public static final double tuningFactor = 0.75;
 	
