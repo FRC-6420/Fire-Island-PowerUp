@@ -11,6 +11,8 @@
 
 package org.usfirst.frc6420.powerupcode.commands;
 
+import org.usfirst.frc6420.powerupcode.Constants;
+
 import edu.wpi.first.wpilibj.command.CommandGroup;
 //import org.usfirst.frc6420.powerupcode.subsystems.*;
 
@@ -29,15 +31,17 @@ public class robotPosLeftSwitch extends CommandGroup {
         //      addSequential(new Command2());
         // these will run in order.
 
-    	addSequential (new AutoMove(100));
+    	System.out.println("inside of robotPosLeftSwitch");
     	
-    	addSequential (new AutoTurn(-90));
+    	addSequential (new AutoMove(85));
     	
-    	//addSequential (new AutoLift(1));
+    	addSequential (new AutoTurn(90));
     	
-    	//addSequential (new AutoMove(100));
+    	//addSequential (new AutoLift(10));
     	
-    	//addSequential (new AutoGrabber(1));
+    	//addSequential (new AutoMove(85));
+    	
+    	//addSequential (new AutoGrabber(2));
     	
     	//addSequential (new AutoMove(-100));
     	

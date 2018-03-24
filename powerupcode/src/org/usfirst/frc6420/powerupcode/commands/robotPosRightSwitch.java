@@ -29,15 +29,15 @@ public class robotPosRightSwitch extends CommandGroup {
         //      addSequential(new Command2());
         // these will run in order.
 
-    	addSequential (new AutoMove(100));
+    	addSequential (new AutoMove(85));
     	
-    	addSequential (new AutoTurn(-90));
+    	//addSequential (new AutoTurn(-90));
     	
-    	//addSequential (new AutoLift(1));
+    	//addSequential (new AutoLift(10));
     	
-    	//addSequential (new AutoMove(100));
+    	//addSequential (new AutoMove(85));
     	
-    	//addSequential (new AutoGrabber(1));
+    	//addSequential (new AutoGrabber(2));
     	
     	//addSequential (new AutoMove(-100));
     	

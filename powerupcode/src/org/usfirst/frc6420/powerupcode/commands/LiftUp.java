@@ -58,7 +58,7 @@ public class LiftUp extends Command {
     @Override
     protected void end() {
     	//Robot.lift.setLiftSpeed(0);
-    	Robot.lift.setLiftSpeed(0.1);
+    	Robot.lift.setLiftSpeed(0.15);
     }
 
     // Called when another command which requires one or more of the same

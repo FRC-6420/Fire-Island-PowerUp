@@ -60,7 +60,7 @@ public class TeleOpDrive extends Command {
     	if (targetSpeedX < Constants.zeroBand && targetSpeedX > Constants.zeroBand * -1) {
     		targetSpeedX = 0;
     	}
-    	
+    	/*
     	if (targetSpeedY == 0) {
     		actualSpeedY = 0;
     	}
@@ -78,9 +78,12 @@ public class TeleOpDrive extends Command {
     	} else if (actualSpeedX > targetSpeedX && Math.abs(actualSpeedX - targetSpeedX) > Constants.rampConstant) {
     		actualSpeedX -= Constants.rampConstant;
     	}
+    	*/
     	
-    	leftMotorValue =  Constants.tuningFactor * (actualSpeedY - actualSpeedX);
-    	rightMotorValue = Constants.tuningFactor * (actualSpeedY + actualSpeedX);
+    	
+    	
+    	leftMotorValue =  targetSpeedY - targetSpeedX; //Constants.tuningFactor * (actualSpeedY - actualSpeedX);
+    	rightMotorValue = targetSpeedY + targetSpeedX; //Constants.tuningFactor * (actualSpeedY + actualSpeedX);
     	
     	Robot.driveBase.setMotorSpeeds(leftMotorValue, rightMotorValue);
     	
