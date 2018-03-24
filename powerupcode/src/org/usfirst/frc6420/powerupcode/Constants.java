@@ -11,7 +11,6 @@ public class Constants {
 	public static String gameData = "   ";
 	public static char ourSwitch = ' ';
 	public static char scale = ' ';
-	public static char robotpos = ' ';
    /*************************************************
     * constants for drive train and lift/motors  
     *************************************************/
