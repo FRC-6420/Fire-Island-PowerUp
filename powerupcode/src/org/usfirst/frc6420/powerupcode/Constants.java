@@ -11,6 +11,7 @@ public class Constants {
 	public static String gameData = "   ";
 	public static char ourSwitch = ' ';
 	public static char scale = ' ';
+	public static char robotpos = ' ';
    /*************************************************
     * constants for drive train and lift/motors  
     *************************************************/
@@ -22,7 +23,7 @@ public class Constants {
 	// zero band changes the size of the zero area on the controller 
 	public static final double zeroBand = 0.3;
 	// tuning factor changes how fast the robot can go 
-	public static final double tuningFactor = 1;
+	public static final double tuningFactor = .7;
 	
 	// arms/grabber motors 
 	public static final double grabberOutSpeed = .7;
